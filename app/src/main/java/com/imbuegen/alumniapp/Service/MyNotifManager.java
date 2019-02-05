@@ -5,7 +5,6 @@ import android.content.Context;
 import android.support.v4.app.NotificationCompat;
 
 import com.imbuegen.alumniapp.Constants;
-import com.imbuegen.alumniapp.R;
 
 public class MyNotifManager {
     private Context context;
@@ -23,7 +22,6 @@ public class MyNotifManager {
 
     public void displayNotif(String title, String descript){
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, Constants.CHANNEL_ID)
-                .setSmallIcon(R.mipmap.acm)
                 .setContentTitle(title)
                 .setContentText(descript);
 
